@@ -1,0 +1,202 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content{
+    min-width: min-content;
+    height: 100vh;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content_top{
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight:500;
+    padding: 1rem;
+}
+.content_top span:not(:first-child){
+    margin-left: .8rem;
+}
+.content_center{
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.content_center-right{
+    flex-basis: 60%;
+}
+.content_center-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content_center-left{
+    flex-basis: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 3rem 2rem 5rem 3rem;  
+}
+.content_center-left>*{
+   margin-top: 1rem;
+}
+.content_center-left h1{
+    font-size: 2.8rem;
+}
+.content_center-left_signup input{
+    width: 300px;
+    padding:.6rem 1rem .6rem .5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: rgb(223, 223, 223);
+}
+.content_center-left_signup input:focus{
+    box-shadow: 0px 0px 5px 1px teal;
+}
+.content_center-left button{
+    width: 100px;
+    padding:.6rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: rgb(0, 0, 0);
+    color: rgb(165, 162, 162);
+    font-weight: bold;
+    box-shadow: 0px 1px 3px 0px black;
+    transition: transform 200ms ease-in-out;
+}
+
+.content_center-left button:hover,.content_center-left button:active{
+    color: red;
+    transform: scale(.9,.9);
+}
+.content_center-left p{
+    font-weight: 400;
+    font-size: .7rem;
+    margin-top: .5rem;
+    color: rgb(59, 58, 58);
+}
+
+.content_logo{
+    height: 10%;
+}
+.content_logo p{
+    padding-left: 3rem;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+    font-size: .7rem;
+}
+.content_logo-entreprise{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.content_logo-entreprise div{
+    padding-top: .5rem;
+    font-weight: 900;
+    color: rgb(75, 75, 75);
+    
+}
+
+@media screen and (max-width:500px) {
+    
+   .content{
+       height: auto;
+   }
+    .content_top{
+        height: 15%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+    }
+ 
+   .content_center{
+    display: flex;
+    flex-flow: column;
+
+    }
+    .content_center-right{
+        flex-basis: 100%;
+    }
+    .content_center-left{
+        flex-basis: 100%;
+        align-items: center;
+        padding: 0;
+    }
+    .content_center-left *{
+        width: 100%;
+        text-align: center;
+    }
+    .content_center-left p{
+        font-size: .5rem;
+    }
+    .content_center-left_signup input{
+        width: 300px;
+        text-align: left;
+    }
+    .content_center-left button{
+        width: 80px;
+        margin-left: .5rem;
+    }
+    .content_logo p{
+       padding: 0;
+    }
+    .content_logo{
+        justify-content: space-evenly;
+    }
+    .content_logo-entreprise{
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        overflow-x: auto;
+        margin: auto;
+    }
+    .content_logo-entreprise div{
+        width: 100px;
+        height: 100%;
+        padding-top: .5rem;
+        padding-left: 1rem;
+    }
+    
+
+}
+
+@media screen and (min-width:501px) and (max-width:900px) {
+    .content{
+        height: auto;
+    }
+    .content_center{
+        flex-direction: column-reverse;
+    }
+    .content_center-left{
+        padding: .5rem 2rem 5rem 3rem;  
+    }
+    .content_logo p{
+        padding: .7rem;
+     }
+    .content_logo-entreprise div{
+        padding:.5rem;
+        margin: 0;
+        
+    }
+}
+
+@media screen and (min-width:901px) and (max-width:1102px) {
+    .content_center-left{
+        padding: 0 0 0 .7rem;  
+    }
+    .content_center-left_signup input{
+        width: 250px;
+        
+    }
+    .content_logo p{
+        padding:0 0 0 .7rem;
+     }
+     
+}
+
