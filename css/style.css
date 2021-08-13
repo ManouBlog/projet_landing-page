@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .content{
-    min-width: min-content;
+    min-width: fit-content;
     height: 110vh;
     text-transform: capitalize;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -121,11 +121,14 @@
     }
     .content_center-right{
         flex-basis: 100%;
+        padding: 0;
+        margin: 0;
     }
     .content_center-left{
         flex-basis: 100%;
         align-items: center;
         padding: 0;
+        margin: 0;
     }
     .content_center-left *{
         width: 100%;
@@ -157,7 +160,6 @@
         flex-shrink: 0;
     }
     
-
 }
 
 @media screen and (min-width:501px) and (max-width:900px) {
