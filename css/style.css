@@ -5,7 +5,7 @@
 }
 .content{
     min-width: min-content;
-    height: 100vh;
+    height: 110vh;
     text-transform: capitalize;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -21,7 +21,7 @@
     margin-left: .8rem;
 }
 .content_center{
-    height: 85%;
+    height: 95%;
     display: flex;
     justify-content: space-between;
 
@@ -33,6 +33,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 50% 40%;
 }
 .content_center-left{
     flex-basis: 50%;
@@ -83,7 +84,7 @@
 }
 
 .content_logo{
-    height: 10%;
+    height: 5%;
 }
 .content_logo p{
     padding-left: 3rem;
@@ -96,8 +97,8 @@
     justify-content: space-around;
     margin: auto;
 }
-.content_logo-entreprise div{
-    padding-top: .5rem;
+.content_logo-entreprise span{
+    padding:.3rem;
     font-weight: 900;
     color: rgb(75, 75, 75);
     
@@ -114,7 +115,6 @@
         flex-flow: column;
         justify-content: space-evenly;
     }
- 
    .content_center{
     display: flex;
     flex-flow: column;
@@ -145,22 +145,6 @@
     }
     .content_logo p{
        padding: 0;
-    }
-    .content_logo{
-        justify-content: space-evenly;
-    }
-    .content_logo-entreprise{
-        width: 100%;
-        height: 50px;
-        padding: 0;
-        overflow-x: auto;
-        margin: auto;
-    }
-    .content_logo-entreprise div{
-        width: 100px;
-        height: 100%;
-        padding-top: .5rem;
-        padding-left: 1rem;
     }
     
 
